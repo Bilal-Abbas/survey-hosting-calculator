@@ -106,8 +106,8 @@
       }
 
       .step {
-        height: 40px;
-        width: 40px;
+        height: 60px;
+        width: 60px;
         margin: 0 2px;
         background-color: #bbbbbb;
         border: none;
@@ -118,6 +118,10 @@
         font-size: 15px;
         color: #f16334;
         opacity: 0.5;
+      }
+
+      .step .fa{
+        font-size: 30px;
       }
 
       .step.active {
@@ -227,6 +231,10 @@
 
       .row.d-flex.justify-content-center.align-items-center{
         overflow: hidden;
+      }
+
+      .thanks-message span{
+        font-size: 25px;
       }
     </style>
   </head>
@@ -349,6 +357,7 @@
                   placeholder="Email"
                   oninput="this.className = ''"
                   name="uname"
+                  type="email"
                 />
               </p>
             </div>
@@ -358,7 +367,7 @@
                 width="100"
                 class="mb-4"
               />
-              <h3>Thankyou for your feedback!</h3>
+              <h3></h3>
               <span id="result-info"
                 >Los servidores de Siteground son la mejor opción para ti.
                 Con planes desde 3,99€ al mes, soporte 24/7, dominio gratis
