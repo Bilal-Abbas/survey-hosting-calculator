@@ -40,14 +40,7 @@ function nextPrev(n) {
     document.getElementById("all-steps").style.display = "none";
     // document.getElementById("register").style.display = "none";
     document.getElementById("thankyou-tab").style.display = "block";
-    console.log(
-      question1Answer,
-      question2Answer,
-      question3Answer,
-      question4Answer,
-      question5Answer,
-      question6Answer
-    );
+    subscribeUserToConvertKit();
     thankYouPageLogic();
   }
   if (x[currentTab]) {
@@ -164,12 +157,6 @@ function fixStepIndicator(n) {
 }
 
 function thankYouPageLogic() {
-  console.log(
-    question2Answer,
-    question3Answer,
-    question4Answer,
-    question5Answer
-  );
   if (question2Answer == "price" && question3Answer == "english-and-spanish") {
     console.log("Ending A");
     $("#thankyou-tab #result-info").html("");
@@ -224,5 +211,29 @@ function thankYouPageLogic() {
     hosting de Webempresa.` +
         '<br/><br/><a id="result-link" href="https://bit.ly/3v6d0b2" target="_blank">VER LA OFERTA</a>'
     );
+  }
+}
+
+function subscribeUserToConvertKit() {
+  var regx = /\S+@\S+\.\S+/;
+  if (question6Answer != "" && question6Answer != undefined) {
+    if (regx.test(question6Answer)) {
+      $.ajax({
+        url: "https://api.convertkit.com/v3/forms/2656582/subscribe",
+        method: "POST",
+        dataType: "json",
+        data: {
+          api_key: "BMzH9Hn71LapPjfYHMlVvw",
+          email: question6Answer,
+          first_name: question1Answer,
+        },
+        error: function (xhr, status, error) {
+          console.error("AJAX Error: " + status + error);
+        },
+        success: function (response) {
+          console.log("AJAX Sucess:", response);
+        },
+      });
+    }
   }
 }
