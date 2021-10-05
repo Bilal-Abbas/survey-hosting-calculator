@@ -161,7 +161,7 @@ function thankYouPageLogic() {
         '<br/><br/><a id="result-link" href="https://www.siteground.es/go/8yl06h20rl" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
-    (question2Answer == "speed" || question2Answer == "installation") &&
+    (question2Answer == "speed") &&
     (question3Answer == "spanish-only" ||
       question3Answer == "english-and-spanish")
   ) {
@@ -177,9 +177,8 @@ function thankYouPageLogic() {
         '<br/><br/><a id="result-link" href="https://www.cloudways.com/es/hosting-para-wordpress.php?id=970428" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
-    question2Answer == "balance" &&
-    question3Answer == "spanish-only" &&
-    question5Answer == "europe"
+    (question2Answer == "balance" && question2Answer == "installation") ||
+    question3Answer == "spanish-only" && question5Answer == "europe"
   ) {
     console.log("Ending C");
     $("#thankyou-tab #result-info").html("");
@@ -192,9 +191,8 @@ function thankYouPageLogic() {
         '<br/><br/><a id="result-link" href="https://bit.ly/3ekH0u2" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
-    question2Answer == "balance" &&
-    question3Answer == "spanish-only" &&
-    question5Answer == "america"
+    (question2Answer == "balance" && question2Answer == "installation") ||
+    (question3Answer == "spanish-only" && question5Answer == "america")
   ) {
     console.log("Ending D");
     $("#thankyou-tab #result-info").html("");
