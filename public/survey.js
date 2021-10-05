@@ -40,7 +40,14 @@ function nextPrev(n) {
     document.getElementById("all-steps").style.display = "none";
     // document.getElementById("register").style.display = "none";
     document.getElementById("thankyou-tab").style.display = "block";
-    console.log(question1Answer, question2Answer, question3Answer, question4Answer, question5Answer, question6Answer)
+    console.log(
+      question1Answer,
+      question2Answer,
+      question3Answer,
+      question4Answer,
+      question5Answer,
+      question6Answer
+    );
     thankYouPageLogic();
   }
   if (x[currentTab]) {
@@ -71,14 +78,12 @@ function validateForm() {
       errorFeild.innerHTML = "Este campo es obligatorio.";
       valid = false;
     }
-    if (tab[currentTab].id == "name-tab"){
-      let checkName = $(
-        "#" + tab[currentTab].id + ' input').val()
-      if(checkName && checkName != ""){
-        question1Answer = checkName
+    if (tab[currentTab].id == "name-tab") {
+      let checkName = $("#" + tab[currentTab].id + " input").val();
+      if (checkName && checkName != "") {
+        question1Answer = checkName;
       }
-    }
-    else if (tab[currentTab].id == "hostname-tab") {
+    } else if (tab[currentTab].id == "hostname-tab") {
       let checkLength = $(
         "#" + tab[currentTab].id + ' input[name="radio"]:checked'
       ).length;
@@ -130,11 +135,10 @@ function validateForm() {
           "#" + tab[currentTab].id + ' input[name="radio"]:checked'
         ).val();
       }
-    } else if(tab[currentTab].id == "newsletter-tab"){
-      let checkEmail = $(
-        "#" + tab[currentTab].id + ' input').val()
-      if(checkEmail && checkEmail != ""){
-        question6Answer = checkEmail
+    } else if (tab[currentTab].id == "newsletter-tab") {
+      let checkEmail = $("#" + tab[currentTab].id + " input").val();
+      if (checkEmail && checkEmail != "") {
+        question6Answer = checkEmail;
       }
     }
   }
@@ -177,7 +181,7 @@ function thankYouPageLogic() {
         '<br/><br/><a id="result-link" href="https://www.siteground.es/go/8yl06h20rl" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
-    (question2Answer == "speed") &&
+    question2Answer == "speed" &&
     (question3Answer == "spanish-only" ||
       question3Answer == "english-and-spanish")
   ) {
@@ -194,7 +198,7 @@ function thankYouPageLogic() {
     );
   } else if (
     (question2Answer == "balance" && question2Answer == "installation") ||
-    question3Answer == "spanish-only" && question5Answer == "europe"
+    (question3Answer == "spanish-only" && question5Answer == "europe")
   ) {
     console.log("Ending C");
     $("#thankyou-tab #result-info").html("");
