@@ -165,7 +165,7 @@ function thankYouPageLogic() {
     Con planes desde 3,99€ al mes, soporte 24/7, dominio gratis
     el primer año y certificado SSL gratuito, este hosting es todo
     lo que necesitas para tu blog o web de WordPress.` +
-        '<br/><p class="privacy-policy">Al apuntarte, estás de acuerdo con la política de privacidad de Tribu Olaf.</p><br/><br/><a id="result-link" href="https://www.siteground.es/go/8yl06h20rl" target="_blank">VER LA OFERTA</a>'
+        '<br/><br/><a id="result-link" href="https://www.siteground.es/go/8yl06h20rl" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
     question2Answer == "speed" &&
@@ -181,7 +181,7 @@ function thankYouPageLogic() {
     gratuita en 1-click, área de ensayo y fácil gestión de DNS.
     Además, lo puedes probar gratis sin tarjeta de crédito.
     ` +
-        '<br/><p class="privacy-policy">Al apuntarte, estás de acuerdo con la política de privacidad de Tribu Olaf.</p><br/><br/><a id="result-link" href="https://www.cloudways.com/es/hosting-para-wordpress.php?id=970428" target="_blank">VER LA OFERTA</a>'
+        '<br/><br/><a id="result-link" href="https://www.cloudways.com/es/hosting-para-wordpress.php?id=970428" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
     (question2Answer == "balance" && question2Answer == "installation") ||
@@ -195,7 +195,7 @@ function thankYouPageLogic() {
     Además, cuenta con un soporte técnico en español 24/7. Haz clic en el botón
     de abajo para conseguir un 25% de descuento exclusivo en todos los planes
     de hosting de Webempresa.` +
-        '<br/><p class="privacy-policy">Al apuntarte, estás de acuerdo con la política de privacidad de Tribu Olaf.</p><br/><br/><a id="result-link" href="https://bit.ly/3ekH0u2" target="_blank">VER LA OFERTA</a>'
+        '<br/><br/><a id="result-link" href="https://bit.ly/3ekH0u2" target="_blank">VER LA OFERTA</a>'
     );
   } else if (
     (question2Answer == "balance" && question2Answer == "installation") ||
@@ -209,7 +209,7 @@ function thankYouPageLogic() {
     cuenta con soporte técnico en español 24/7. Haz clic en el botón de abajo
     para conseguir un 25% de descuento exclusivo en todos los planes de
     hosting de Webempresa.` +
-        '<br/><p class="privacy-policy">Al apuntarte, estás de acuerdo con la política de privacidad de Tribu Olaf.</p><br/><br/><a id="result-link" href="https://bit.ly/3v6d0b2" target="_blank">VER LA OFERTA</a>'
+        '<br/><br/><a id="result-link" href="https://bit.ly/3v6d0b2" target="_blank">VER LA OFERTA</a>'
     );
   }
 }
