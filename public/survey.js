@@ -219,7 +219,7 @@ function subscribeUserToConvertKit() {
   if (question6Answer != "" && question6Answer != undefined) {
     if (regx.test(question6Answer)) {
       $.ajax({
-        url: "https://api.convertkit.com/v3/forms/2656582/subscribe",
+        url: "https://api.convertkit.com/v3/forms/2526579/subscribe",
         method: "POST",
         dataType: "json",
         data: {
